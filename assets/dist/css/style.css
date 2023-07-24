@@ -1,0 +1,353 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+	:root {
+		--color_login: #b2b2b272;
+		/* --color_login: #2192FF; */
+	}
+
+	*{
+		padding: 0;
+		margin: 0;
+		/* box-sizing: border-box; */
+	}
+	h1, h2,h3{
+		/* margin-top: 2%; */
+		/* bottom: 4%; */
+		font-weight: bold;
+		/* margin-bottom: 10%; */
+		text-align: center;
+		/* color: white; */
+	}
+
+	body{
+		font-family: 'Montserrat', sans-serif;
+
+		overflow: hidden;
+	}
+	.titulo{
+		color: rgb(17, 17, 17);
+		font-family: 'Montserrat', sans-serif;
+		font-size: 17px;
+		font-weight: 700;
+		margin-bottom: 10px;
+		text-align: center;
+		/* background-color: #F5F5F5; */
+	}
+	.wave{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		z-index: -1;
+	}
+
+	.container{
+		width: 100%;	
+		height: 100vh;
+		display: flex;
+		flex-flow: row;
+	}
+
+	p{
+		font-weight: bold;
+	}
+	.section1{
+		width: 70%;	
+		/* display: block; */
+		background-color: #F5F5F5;
+	}
+
+	.section2{
+		width: 30%;	
+		height: 100vh;
+		position: relative;
+		background-color: #ffff;
+		/* border-left: 2px solid var(--color_login); */
+		/* object-fit: cover; */
+	}
+
+	.imag{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+		margin-top: 15%;
+		border: 0.2px #441f1fe5;
+		border-radius: 5px;
+	
+    	
+	}
+
+	.imag_s1{
+		width: 50%;
+		/* margin-top: 22%; */
+		margin-bottom: 3%;
+		object-fit: contain;
+		height: 40%;
+		border-radius: 5%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: #ffff;
+	}
+
+	.img{
+		/* display: flex; */
+		align-items: center;
+		/* background-color: #2C3159; */
+	}
+
+	.login-content{
+		
+		width: 100%;
+		height: 50px;
+		position: absolute;
+		/* top: 50%; */
+		/* left: 50%; */
+		/* margin: -25px 0 0 -25px; */
+	}
+
+	.imgBanner img{
+		height: 250px;
+	}
+
+	form{
+		width: 80%;
+		display: block;
+		margin-top: 45%;
+		margin-left: auto;
+		margin-right: auto;
+		/* margin-top: 10%; */
+		border-radius: 15px;
+	}
+	/* imagen del logins */
+	.login-content img{
+		height: 150px;
+	}
+
+	.login-content h2{
+		/* margin: 15px 0; */
+		color:#3f484ae3;
+		padding-top: 10px;
+		text-transform: uppercase;
+		font-size: 1rem;
+	}
+
+	.login-content .input-div{
+		position: relative;
+		display: grid;
+		grid-template-columns: 7% 86% 7%;
+		margin: 15px 0;
+		padding: 5px 0;
+		border-radius: 5px;
+		border: .3px solid var(--color_login);
+		/* border-bottom: 1px solid var(--color_login); */
+		/* border-left: 1px solid #0195ff7d; */
+		/* border-right: 1px solid #0195ff7d; */
+		/* border-top: 1px solid #0195ff7d; */
+		/* border-radius: 5px; */
+	}
+
+	.login-content .input-div.one{
+		margin-top: 0;
+	}
+	.pass{
+		/* float: right; */
+		cursor: pointer;
+	}
+	.i{
+		color: #458184;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.i i{
+		transition: .1s;
+		color: var(--color_login);
+	}
+
+	.input-div > div{
+		position: relative;
+		height: 30px;
+	}
+
+	.input-div > div > h5{
+		position: absolute;
+		left: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		color: #0196FF;
+		font-size: 15px;
+		transition: .3s;
+	}
+
+	.input-div:before, .input-div:after{
+		content: '';
+		position: absolute;
+		bottom: -2px;
+		width: 0%;
+		height: 2px;
+		background-color: #38d39f;
+		transition: .4s;
+	}
+
+	.input-div:before{
+		right: 50%;
+	}
+
+	.input-div:after{
+		left: 50%;
+	}
+
+	.input-div.focus:before, .input-div.focus:after{
+		width: 50%;
+	}
+
+	.input-div.focus > div > h5{
+		top: -5px;
+		font-size: 15px;
+	}
+
+	.input-div.focus > .i > i{
+		color: #38d39f;
+	}
+
+	/* controla los inputText de usuario y contraseña */
+	.input-div > div > input{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		border: none;
+		outline: none;
+		background: none;
+		padding: 0.1rem 0.1rem;
+		font-size: 0.9rem;
+		color: #2C3159;
+		font-family: 'Montserrat', sans-serif;
+
+		font-weight: bold;
+
+	}
+
+	.input-div.pass{
+		margin-bottom: 4px;
+	}
+
+	a{
+		display: block;
+		text-align: right;
+		padding-top: 15px;
+		text-decoration: underline;
+		color: #22284eba;
+		font-size: 0.9rem;
+		transition: .3s;
+	}
+
+	.btn{
+		display: block;
+		width: 100%;	
+		height: 40px;
+		border-radius: 3px;
+		border: 1px;
+		background-color: #4D96FF;
+		/* background-image: linear-gradient(to right, var(--color_login), #19D3DA, #19D3DA);	 */
+		background-size: 200%;
+		font-size: 1rem;
+		color: #fff;
+		font-family: 'Lato', sans-serif;
+		font-weight: bold;
+		/* text-transform: uppercase; */
+		margin: 1rem 0;
+		cursor: pointer;
+		transition: .3s;
+	}
+	.btn:hover{
+		-moz-box-shadow: 0 10px 4px #4D96FF;
+		-webkit-box-shadow: 0 10px 4px #4D96FF;
+		box-shadow: 0 13px 10px #4d97ffa5;
+		
+		
+	}
+
+	.btn_r{
+		display: block;
+		width: 100%;	
+		height: 30px;
+		text-decoration: none;
+		text-align: center;
+		border-radius: 3px;
+		padding-top: 10px;
+		border: 1px;
+		background-color: #5FD068;
+		
+		background-size: 200%;
+		font-size: 1rem;
+		color: #fff;
+		font-family: 'Lato', sans-serif;
+		font-weight: bold;
+		/* text-transform: uppercase; */
+		margin: 1rem 0;
+		cursor: pointer;
+		transition: .5s;
+	}
+	.btn_r:hover{
+		-moz-box-shadow: 0 10px 4px #5FD068;
+		-webkit-box-shadow: 0 10px 4px #5FD068;
+		box-shadow: 0 13px 10px #5fd0696e;
+	}
+
+
+	@media screen and (max-width: 848px){
+		.section1{
+			/* background-color: #092e4a; */
+			display: none;
+
+		}
+		h1, h3{
+			margin-top: 0%;
+			text-align: center;
+			/* margin-bottom: 5%; */
+			/* bottom: 10%; */
+		}
+		.imag_s1{
+			width: 50%;
+			/* margin-top: 5%;
+			height: auto; */
+			border-radius: 10%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.section2{
+			width: 100%;
+			justify-self: center;
+		}
+		.login-content{
+			text-align: center; 
+			top: 30%;
+			position: absolute;
+		}
+		.login-content h2 {
+			font-size: .5rem;
+			margin: 3px 0;
+		}
+		form{
+			/* background-color:rgb(247, 247, 247); */
+			/* top: 50%; */
+			border-bottom-left-radius: 15%;
+			border-top-right-radius: 15%;
+			padding: 15px 15px 15px 15px;
+		}
+		}
+
+	/* CSS DE FORMULARIO */
+
+
+
+
+
+
+	/* CSS DE FORMULARIO */

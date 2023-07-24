@@ -1,0 +1,107 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+ :root {
+    --color_login: #366ED2;
+    /* --color_login: #2192FF; */
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#wel{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.3em;
+    color: #506D84;
+}
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-size: 1.8rem; */
+    text-align: center;
+    color: black;
+}
+h2{
+    border: 1px solid rgb(12, 148, 160);
+    border-radius: 200px;
+}
+/* --------- CLASES ----------- */
+.botones{
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.boton_link{
+    /* background-color: #3C8DAD; */
+	background-color: #0183FF;	
+ 
+	background-size: 200%;
+    border-radius: 5px;
+    height: 50px;
+    width: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.boton_link:hover{
+    /* background-color: #545b62e0; */
+	background-position: right;
+    /* text-decoration: underline; */
+
+    box-shadow: 0 7px 15px #0184ffae;
+
+}
+.centro{
+    color: white;
+    text-align: center;
+    font-size: 21px;
+}
+.centro:hover{
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    transition: .5s;
+} 
+.icon-button{
+    font-size: 1.2rem;
+}     
+.espacio{
+    height: 50px;
+}
+.marco{
+    background-color: #DAEAF1;
+    border:1px solid #ffff;
+}
+.fondo_inicio{
+    width: 100%;
+    height: 80vh;
+    object-fit: contain;
+    /* margin: 10%; */
+    /* object-position: center ; */
+}
+.img_logo{
+    width: 60%;
+    height: 100px;
+    object-fit: contain;
+    object-position: center center;
+}
+.img_logo_2{
+    width: 80%;
+    height: 140px;
+    object-fit: contain;
+    /* object-fit: contain; */
+    float: right;
+    object-position: center center;
+}
+.icon-size{
+    font-size: 4.3rem;
+    justify-self: center;
+    color: #29c45d;
+
+}
+.icon-size:hover{
+    
+    color: #29c45d;
+    transition: ease-in-out;
+    font-size: 4.4rem;
+}
